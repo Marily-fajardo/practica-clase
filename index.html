@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <script src="/js/index.js" defer></script>
+    <!-- el defer  indica que el script se ejecuta cuando la
+    página ha terminado de analizarse. -->
+</head>
+    <body>
+        <div id="app">
+            <h1 class="titulo-lista">LISTA SUPERMERCADO</h1>
+            <div class="lista-contenedor">
+                <div class="lista-agregar-lista">
+                    <input id="input-lista" placeholder="Ingresa el producto"/>
+                    <button onclick="guardar()" id="boton-agregar" disabled>Agregar</button>
+                </div>
+
+
+                <ul id="lista-super">
+                    <li class="lista-item">
+                        <span>Prueba</span>
+                        <button  id="boton-eliminar"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

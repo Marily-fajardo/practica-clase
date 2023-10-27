@@ -1,0 +1,139 @@
+body {
+    font-family:  sans-serif;
+    padding: 2rem;
+}
+
+
+/** 
+* ? se coloca el punto cuando es una referencia a una clase
+*/
+.titulo-lista {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+}
+
+
+
+/** 
+* ? se coloca el simbolo numeral cuando es una referencia por id
+*/
+#input-lista {
+    padding: 0.8rem 1rem;
+    width: 90%;
+    border-radius: 0.6rem;
+    border: 1px solid #00000020;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#boton-agregar:disabled {
+    opacity: 0.6;
+    transform: scale(0.9);
+    cursor: not-allowed;
+}
+
+#boton-agregar {
+    padding: 0.5rem 1.5rem;
+    width: 30%;
+    background: #03d935;
+    color: white;
+    font-weight: bold;
+    border: none; 
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#boton-agregar > i {
+    padding: 0.5rem;
+}
+
+.lista-agregar-lista {
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.lista-contenedor {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+
+#lista-super {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction especifica cómo colocar los objetos flexibles en,
+    el contenedor flexible definiendo el eje principal y la dirección */
+    gap: 1rem; 
+    /* gap establece espacio entre filas y columnas */
+}
+
+
+
+.lista-item {
+    list-style: none;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #00000020;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000005;
+}
+
+
+.lista-item > span {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.lista-item > button {
+    margin-right: 1rem;
+}
+
+#boton-eliminar {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: x-small;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    color: white;
+    background: #E02E0A;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .lista-contenedor,
+    .lista-agregar-lista,
+    #lista-super {
+        width: 100%;
+    }
+    #boton-agregar {
+        width: 100%;
+    }
+    #input-lista {
+        width: 94%;
+    }
+}
